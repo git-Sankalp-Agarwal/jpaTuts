@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/productDs")
 public class ProductController {
 
     @Autowired
