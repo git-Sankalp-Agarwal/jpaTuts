@@ -20,8 +20,8 @@ public class ProductController {
     ProductRepository productRepository;
 
     @GetMapping
-    public List<ProductEntity> getProductEntityList(@RequestParam(defaultValue = "ids") String sortsBy) {
-        return productRepository.findBy(Sort.by(Sort.Direction.DESC, sortsBy,"priasdasce"));
+    public List<ProductEntity> getProductEntityList(@RequestParam(defaultValue = "id") String sortsBy) {
+        return productRepository.findBy(Sort.by(Sort.Direction.DESC, sortsBy,"price"));
     }
 
 
